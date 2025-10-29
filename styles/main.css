@@ -1,0 +1,110 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3, h4, h5, h6, p,ul{
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+ul {
+    margin-left: 2em;
+    list-style-position: outside;
+}
+
+
+
+header{
+    border-bottom: 2px solid var(--accent-color);
+    padding: 1em;
+    background: linear-gradient(30deg, #f6bb73 0%, white 30%, white 65%, #f6bb73 100%);
+}
+/* custom property */
+:root {
+    --accent-color: #800000;  /* could also be coded #800 */
+}
+
+/* default styles */
+body {
+    width: 80%;
+    margin: auto;
+    border: 2px solid var(--accent-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+a:hover, a:focus{
+    font-style: italic;
+    color: var(--accent-color);
+}
+h1 {
+    font-size: 150%;
+    border-top:2px solid var(--accent-color);
+    border-bottom:2px solid var(--accent-color);
+}
+h2 {
+    font-size: 130%;
+    color: var(--accent-color);
+}
+h3 {
+    font-size: 105%;
+}
+
+/* the styles for the header */
+header {
+    & h2 {
+        font-size: 175%;
+        text-indent: 0;
+        padding-bottom: 0;
+    }
+    & h3 {
+        font-size: 130%;
+        font-style: italic;
+        text-indent: 0;
+        padding-bottom: 1em;
+    }
+    & img {
+        float: left;
+        margin: 0.75em 1em;
+    }
+}
+
+/* the styles for the main content */
+main {
+    clear: left;
+    padding: 0 1em 1em 1em;
+}
+
+/* the styles for the footer */
+footer {
+    background-color: var(--accent-color);
+    padding: 2em;
+    text-align: center;
+    & p {
+        color: white;
+        margin: 0;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+    }
+}
+
+/* CSS class */
+.large {
+    font-size: 125%;
+}
+
+blockquote{
+    font-style: italic;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 1em 0;
+}
+
+main img.speaker{
+    border: 4px solid var(--accent-color);
+    border-radius: 12px;
+    background-color: white;
+
+}
